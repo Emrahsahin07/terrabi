@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Catalog - Terrabi Organic Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2C5F2D',
+                        secondary: '#97BC62',
+                        accent: '#F2E8CF'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body { font-family: 'Open Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+        .lang-selector input:checked + label { background-color: #2C5F2D; color: white; }
+        .scroll-hidden::-webkit-scrollbar { display: none; }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .custom-checkbox {
+            display: inline-block;
+            position: relative;
+            padding-left: 30px;
+            cursor: pointer;
+        }
+        .custom-checkbox input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            border: 2px solid #97BC62;
+            border-radius: 4px;
+        }
+        .custom-checkbox input:checked ~ .checkmark {
+            background-color: #2C5F2D;
+            border-color: #2C5F2D;
+        }
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        .custom-checkbox input:checked ~ .checkmark:after {
+            display: block;
+        }
+        .custom-checkbox .checkmark:after {
+            left: 6px;
+            top: 2px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+        .product-card:hover .quick-view-btn {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="https://readdy.ai/home/3753529c-337c-48b6-bdd0-ed34bd0cd66b/98caa673-e9c7-406e-be1c-1c1ce22f60af" data-readdy="true" class="text-2xl font-['Pacifico'] text-primary">Terrabi</a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="https://readdy.ai/home/3753529c-337c-48b6-bdd0-ed34bd0cd66b/98caa673-e9c7-406e-be1c-1c1ce22f60af#about" data-readdy="true" class="text-gray-700 hover:text-primary transition-colors">About Us</a>
+                    <a href="https://readdy.ai/home/3753529c-337c-48b6-bdd0-ed34bd0cd66b/98caa673-e9c7-406e-be1c-1c1ce22f60af#products" data-readdy="true" class="text-primary font-medium transition-colors">Products</a>
+                    <a href="https://readdy.ai/home/3753529c-337c-48b6-bdd0-ed34bd0cd66b/98caa673-e9c7-406e-be1c-1c1ce22f60af#certifications" data-readdy="true" class="text-gray-700 hover:text-primary transition-colors">Certifications</a>
+                    <a href="https://readdy.ai/home/3753529c-337c-48b6-bdd0-ed34bd0cd66b/98caa673-e9c7-406e-be1c-1c1ce22f60af#export" data-readdy="true" class="text-gray-700 hover:text-primary transition-colors">Export Process</a>
+                </nav>
+                <div class="flex items-center space-x-6">
+                    <div class="hidden md:flex items-center bg-gray-100 rounded-full p-1">
+                        <input type="radio" name="lang" id="en" class="hidden" checked>
+                        <label for="en" class="px-4 py-1 text-sm rounded-full cursor-pointer transition-colors">EN</label>
+                        <input type="radio" name="lang" id="ru" class="hidden">
+                        <label for="ru" class="px-4 py-1 text-sm rounded-full cursor-pointer transition-colors">RU</label>
+                    </div>
+                    <button class="!rounded-button bg-primary text-white px-6 py-2 hover:bg-opacity-90 transition-colors whitespace-nowrap">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <section class="bg-primary/5 py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div>
+                        <h1 class="text-3xl font-bold text-gray-900">Our Products</h1>
+                        <p class="text-gray-600 mt-2">Discover our premium organic products from Uzbekistan</p>
+                    </div>
+                    <a href="https://readdy.ai/home/3753529c-337c-48b6-bdd0-ed34bd0cd66b/98caa673-e9c7-406e-be1c-1c1ce22f60af" data-readdy="true" class="flex items-center text-primary hover:text-primary/80 mt-4 md:mt-0">
+                        <i class="ri-arrow-left-line mr-2"></i>
+                        <span>Back to Home</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-6 border-b">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
+                    <div class="flex items-center space-x-4 overflow-x-auto scroll-hidden pb-2 w-full md:w-auto">
+                        <button id="all-category" class="!rounded-button bg-primary text-white px-4 py-2 whitespace-nowrap">All Products</button>
+                        <button id="rice-category" class="!rounded-button bg-white border border-gray-300 text-gray-700 px-4 py-2 whitespace-nowrap hover:bg-gray-50">Rice</button>
+                        <button id="beans-category" class="!rounded-button bg-white border border-gray-300 text-gray-700 px-4 py-2 whitespace-nowrap hover:bg-gray-50">Beans</button>
+                        <button id="legumes-category" class="!rounded-button bg-white border border-gray-300 text-gray-700 px-4 py-2 whitespace-nowrap hover:bg-gray-50">Legumes</button>
+                    </div>
+                    <div class="flex items-center space-x-4 w-full md:w-auto">
+                        <div class="relative flex-grow md:flex-grow-0 md:w-64">
+                            <input type="text" placeholder="Search products..." class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-sm">
+                            <div class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+                                <i class="ri-search-line"></i>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <button id="sort-button" class="!rounded-button flex items-center space-x-2 bg-white border border-gray-300 text-gray-700 px-4 py-2 whitespace-nowrap hover:bg-gray-50">
+                                <span>Sort by</span>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </button>
+                            <div id="sort-dropdown" class="hidden absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg z-10">
+                                <ul class="py-1">
+                                    <li><button class="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Newest</button></li>
+                                    <li><button class="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Price: Low to High</button></li>
+                                    <li><button class="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Price: High to Low</button></li>
+                                    <li><button class="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Name: A to Z</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex items-center space-x-2">
+                            <button id="grid-view" class="w-9 h-9 flex items-center justify-center bg-primary text-white rounded hover:bg-primary/90">
+                                <i class="ri-grid-line"></i>
+                            </button>
+                            <button id="list-view" class="w-9 h-9 flex items-center justify-center bg-white border border-gray-300 text-gray-700 rounded hover:bg-gray-50">
+                                <i class="ri-list-check-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product 1 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden product-card group">
+                        <div class="relative">
+                            <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%2520premium%2520organic%2520basmati%2520rice%2520grains%2520in%2520a%2520wooden%2520bowl%2520on%2520a%2520clean%2520white%2520surface%2520with%2520soft%2520natural%2520lighting.%2520The%2520rice%2520appears%2520pristine%2520and%2520high-quality%2520with%2520a%2520subtle%2520warm%2520tone.%2520Minimal%2520styling%2520with%2520focus%2520on%2520the%2520natural%2520beauty%2520of%2520the%2520grains.%2520The%2520background%2520is%2520simple%2520and%2520clean.&width=600&height=400&seq=7&orientation=landscape" alt="Organic Basmati Rice" class="w-full h-64 object-cover">
+                            <span class="absolute top-4 left-4 bg-secondary/90 text-white text-sm font-medium px-3 py-1 rounded-full">Rice</span>
+                            <button class="quick-view-btn absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm text-primary font-medium px-3 py-1 rounded-full opacity-0 transition-opacity duration-200 hover:bg-white">Quick View</button>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Organic Basmati Rice</h3>
+                                <div class="flex">
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-award-line"></i>
+                                    </div>
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-verified-badge-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Premium long-grain basmati rice grown in the fertile valleys of Uzbekistan using traditional organic farming methods.</p>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Key Features:</h4>
+                                <ul class="space-y-1 text-sm text-gray-600">
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Aromatic long-grain variety with exceptional flavor</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">100% pesticide-free cultivation</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">High in essential nutrients and minerals</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Available Packaging:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">5 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">10 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">25 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">Bulk</span>
+                                </div>
+                            </div>
+                            
+                            <button class="!rounded-button w-full bg-primary text-white py-2 hover:bg-primary/90 transition-colors whitespace-nowrap">Request Quote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden product-card group">
+                        <div class="relative">
+                            <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%2520organic%2520jasmine%2520rice%2520grains%2520in%2520a%2520wooden%2520bowl%2520on%2520a%2520clean%2520white%2520surface%2520with%2520soft%2520natural%2520lighting.%2520The%2520rice%2520appears%2520pristine%2520and%2520high-quality.%2520Minimal%2520styling%2520with%2520focus%2520on%2520the%2520natural%2520beauty%2520of%2520the%2520grains.%2520The%2520background%2520is%2520simple%2520and%2520clean.&width=600&height=400&seq=8&orientation=landscape" alt="Organic Jasmine Rice" class="w-full h-64 object-cover">
+                            <span class="absolute top-4 left-4 bg-secondary/90 text-white text-sm font-medium px-3 py-1 rounded-full">Rice</span>
+                            <button class="quick-view-btn absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm text-primary font-medium px-3 py-1 rounded-full opacity-0 transition-opacity duration-200 hover:bg-white">Quick View</button>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Organic Jasmine Rice</h3>
+                                <div class="flex">
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-award-line"></i>
+                                    </div>
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-verified-badge-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Fragrant jasmine rice with a delicate floral aroma, cultivated using traditional organic farming methods in Uzbekistan.</p>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Key Features:</h4>
+                                <ul class="space-y-1 text-sm text-gray-600">
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Distinctive jasmine aroma and soft texture</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Sustainably grown without chemical fertilizers</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Excellent source of complex carbohydrates</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Available Packaging:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">5 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">10 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">25 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">Bulk</span>
+                                </div>
+                            </div>
+                            
+                            <button class="!rounded-button w-full bg-primary text-white py-2 hover:bg-primary/90 transition-colors whitespace-nowrap">Request Quote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden product-card group">
+                        <div class="relative">
+                            <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%2520organic%2520brown%2520rice%2520grains%2520in%2520a%2520wooden%2520bowl%2520on%2520a%2520clean%2520white%2520surface%2520with%2520soft%2520natural%2520lighting.%2520The%2520rice%2520appears%2520pristine%2520and%2520high-quality%2520with%2520its%2520natural%2520brown%2520color.%2520Minimal%2520styling%2520with%2520focus%2520on%2520the%2520natural%2520beauty%2520of%2520the%2520grains.%2520The%2520background%2520is%2520simple%2520and%2520clean.&width=600&height=400&seq=9&orientation=landscape" alt="Organic Brown Rice" class="w-full h-64 object-cover">
+                            <span class="absolute top-4 left-4 bg-secondary/90 text-white text-sm font-medium px-3 py-1 rounded-full">Rice</span>
+                            <button class="quick-view-btn absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm text-primary font-medium px-3 py-1 rounded-full opacity-0 transition-opacity duration-200 hover:bg-white">Quick View</button>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Organic Brown Rice</h3>
+                                <div class="flex">
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-award-line"></i>
+                                    </div>
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-verified-badge-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Nutrient-rich whole grain brown rice with intact bran layer, grown using organic farming practices in Uzbekistan.</p>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Key Features:</h4>
+                                <ul class="space-y-1 text-sm text-gray-600">
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Rich in fiber, vitamins and minerals</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Grown with natural fertilizers only</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Lower glycemic index than white rice</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Available Packaging:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">5 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">10 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">25 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">Bulk</span>
+                                </div>
+                            </div>
+                            
+                            <button class="!rounded-button w-full bg-primary text-white py-2 hover:bg-primary/90 transition-colors whitespace-nowrap">Request Quote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden product-card group">
+                        <div class="relative">
+                            <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%2520organic%2520mung%2520beans%2520in%2520a%2520wooden%2520bowl%2520on%2520a%2520clean%2520white%2520surface%2520with%2520soft%2520natural%2520lighting.%2520The%2520beans%2520appear%2520fresh%2520and%2520high-quality%2520with%2520their%2520characteristic%2520green%2520color.%2520Minimal%2520styling%2520with%2520focus%2520on%2520the%2520natural%2520appearance%2520of%2520the%2520beans.%2520The%2520background%2520is%2520simple%2520and%2520clean.&width=600&height=400&seq=10&orientation=landscape" alt="Organic Mung Beans" class="w-full h-64 object-cover">
+                            <span class="absolute top-4 left-4 bg-secondary/90 text-white text-sm font-medium px-3 py-1 rounded-full">Beans</span>
+                            <button class="quick-view-btn absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm text-primary font-medium px-3 py-1 rounded-full opacity-0 transition-opacity duration-200 hover:bg-white">Quick View</button>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Organic Mung Beans</h3>
+                                <div class="flex">
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-award-line"></i>
+                                    </div>
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-verified-badge-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Nutrient-rich mung beans cultivated using traditional organic methods in the fertile soils of Uzbekistan.</p>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Key Features:</h4>
+                                <ul class="space-y-1 text-sm text-gray-600">
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">High in protein and dietary fiber</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Grown without synthetic pesticides</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Excellent source of folate and iron</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Available Packaging:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">5 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">10 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">25 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">Bulk</span>
+                                </div>
+                            </div>
+                            
+                            <button class="!rounded-button w-full bg-primary text-white py-2 hover:bg-primary/90 transition-colors whitespace-nowrap">Request Quote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 5 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden product-card group">
+                        <div class="relative">
+                            <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%2520organic%2520black%2520beans%2520in%2520a%2520wooden%2520bowl%2520on%2520a%2520clean%2520white%2520surface%2520with%2520soft%2520natural%2520lighting.%2520The%2520beans%2520appear%2520fresh%2520and%2520high-quality%2520with%2520their%2520deep%2520black%2520color%2520and%2520glossy%2520surface.%2520Minimal%2520styling%2520with%2520focus%2520on%2520the%2520natural%2520appearance%2520of%2520the%2520beans.%2520The%2520background%2520is%2520simple%2520and%2520clean.&width=600&height=400&seq=11&orientation=landscape" alt="Organic Black Beans" class="w-full h-64 object-cover">
+                            <span class="absolute top-4 left-4 bg-secondary/90 text-white text-sm font-medium px-3 py-1 rounded-full">Beans</span>
+                            <button class="quick-view-btn absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm text-primary font-medium px-3 py-1 rounded-full opacity-0 transition-opacity duration-200 hover:bg-white">Quick View</button>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Organic Black Beans</h3>
+                                <div class="flex">
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-award-line"></i>
+                                    </div>
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-verified-badge-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Premium black beans with a rich, earthy flavor, grown using sustainable organic farming practices in Uzbekistan.</p>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Key Features:</h4>
+                                <ul class="space-y-1 text-sm text-gray-600">
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Rich in antioxidants and anthocyanins</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Cultivated with natural pest management</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">High in protein and essential minerals</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Available Packaging:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">5 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">10 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">25 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">Bulk</span>
+                                </div>
+                            </div>
+                            
+                            <button class="!rounded-button w-full bg-primary text-white py-2 hover:bg-primary/90 transition-colors whitespace-nowrap">Request Quote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 6 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden product-card group">
+                        <div class="relative">
+                            <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%2520organic%2520red%2520lentils%2520in%2520a%2520wooden%2520bowl%2520on%2520a%2520clean%2520white%2520surface%2520with%2520soft%2520natural%2520lighting.%2520The%2520lentils%2520appear%2520fresh%2520and%2520vibrant%2520with%2520their%2520natural%2520coral%2520color.%2520Minimal%2520styling%2520with%2520focus%2520on%2520the%2520quality%2520and%2520texture%2520of%2520the%2520lentils.%2520The%2520background%2520is%2520simple%2520and%2520clean.&width=600&height=400&seq=12&orientation=landscape" alt="Organic Red Lentils" class="w-full h-64 object-cover">
+                            <span class="absolute top-4 left-4 bg-secondary/90 text-white text-sm font-medium px-3 py-1 rounded-full">Legumes</span>
+                            <button class="quick-view-btn absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm text-primary font-medium px-3 py-1 rounded-full opacity-0 transition-opacity duration-200 hover:bg-white">Quick View</button>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Organic Red Lentils</h3>
+                                <div class="flex">
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-award-line"></i>
+                                    </div>
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-verified-badge-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Premium quality red lentils packed with protein and essential nutrients, grown using organic methods in Uzbekistan.</p>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Key Features:</h4>
+                                <ul class="space-y-1 text-sm text-gray-600">
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Quick-cooking with a mild, sweet flavor</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Grown with crop rotation techniques</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Excellent source of plant-based protein</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Available Packaging:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">5 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">10 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">25 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">Bulk</span>
+                                </div>
+                            </div>
+                            
+                            <button class="!rounded-button w-full bg-primary text-white py-2 hover:bg-primary/90 transition-colors whitespace-nowrap">Request Quote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 7 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden product-card group">
+                        <div class="relative">
+                            <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%2520organic%2520green%2520lentils%2520in%2520a%2520wooden%2520bowl%2520on%2520a%2520clean%2520white%2520surface%2520with%2520soft%2520natural%2520lighting.%2520The%2520lentils%2520appear%2520fresh%2520and%2520vibrant%2520with%2520their%2520natural%2520green%2520color.%2520Minimal%2520styling%2520with%2520focus%2520on%2520the%2520quality%2520and%2520texture%2520of%2520the%2520lentils.%2520The%2520background%2520is%2520simple%2520and%2520clean.&width=600&height=400&seq=13&orientation=landscape" alt="Organic Green Lentils" class="w-full h-64 object-cover">
+                            <span class="absolute top-4 left-4 bg-secondary/90 text-white text-sm font-medium px-3 py-1 rounded-full">Legumes</span>
+                            <button class="quick-view-btn absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm text-primary font-medium px-3 py-1 rounded-full opacity-0 transition-opacity duration-200 hover:bg-white">Quick View</button>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Organic Green Lentils</h3>
+                                <div class="flex">
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-award-line"></i>
+                                    </div>
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-verified-badge-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Robust green lentils with a peppery flavor and firm texture, grown using organic farming practices in Uzbekistan.</p>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Key Features:</h4>
+                                <ul class="space-y-1 text-sm text-gray-600">
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Holds shape well after cooking</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Cultivated with natural soil amendments</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Rich in folate, iron and B vitamins</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Available Packaging:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">5 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">10 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">25 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">Bulk</span>
+                                </div>
+                            </div>
+                            
+                            <button class="!rounded-button w-full bg-primary text-white py-2 hover:bg-primary/90 transition-colors whitespace-nowrap">Request Quote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 8 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden product-card group">
+                        <div class="relative">
+                            <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%2520organic%2520kidney%2520beans%2520in%2520a%2520wooden%2520bowl%2520on%2520a%2520clean%2520white%2520surface%2520with%2520soft%2520natural%2520lighting.%2520The%2520beans%2520appear%2520fresh%2520and%2520high-quality%2520with%2520their%2520deep%2520red%2520color.%2520Minimal%2520styling%2520with%2520focus%2520on%2520the%2520natural%2520appearance%2520of%2520the%2520beans.%2520The%2520background%2520is%2520simple%2520and%2520clean.&width=600&height=400&seq=14&orientation=landscape" alt="Organic Kidney Beans" class="w-full h-64 object-cover">
+                            <span class="absolute top-4 left-4 bg-secondary/90 text-white text-sm font-medium px-3 py-1 rounded-full">Beans</span>
+                            <button class="quick-view-btn absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm text-primary font-medium px-3 py-1 rounded-full opacity-0 transition-opacity duration-200 hover:bg-white">Quick View</button>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Organic Kidney Beans</h3>
+                                <div class="flex">
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-award-line"></i>
+                                    </div>
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-verified-badge-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Premium kidney beans with a distinctive flavor and firm texture, grown using organic farming methods in Uzbekistan.</p>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Key Features:</h4>
+                                <ul class="space-y-1 text-sm text-gray-600">
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Excellent source of plant protein</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Grown with natural pest deterrents</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Rich in antioxidants and fiber</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Available Packaging:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">5 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">10 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">25 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">Bulk</span>
+                                </div>
+                            </div>
+                            
+                            <button class="!rounded-button w-full bg-primary text-white py-2 hover:bg-primary/90 transition-colors whitespace-nowrap">Request Quote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 9 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden product-card group">
+                        <div class="relative">
+                            <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%2520organic%2520chickpeas%2520in%2520a%2520wooden%2520bowl%2520on%2520a%2520clean%2520white%2520surface%2520with%2520soft%2520natural%2520lighting.%2520The%2520chickpeas%2520appear%2520fresh%2520and%2520high-quality%2520with%2520their%2520natural%2520beige%2520color.%2520Minimal%2520styling%2520with%2520focus%2520on%2520the%2520natural%2520appearance%2520of%2520the%2520chickpeas.%2520The%2520background%2520is%2520simple%2520and%2520clean.&width=600&height=400&seq=15&orientation=landscape" alt="Organic Chickpeas" class="w-full h-64 object-cover">
+                            <span class="absolute top-4 left-4 bg-secondary/90 text-white text-sm font-medium px-3 py-1 rounded-full">Legumes</span>
+                            <button class="quick-view-btn absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm text-primary font-medium px-3 py-1 rounded-full opacity-0 transition-opacity duration-200 hover:bg-white">Quick View</button>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Organic Chickpeas</h3>
+                                <div class="flex">
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-award-line"></i>
+                                    </div>
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-verified-badge-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Premium quality chickpeas with a nutty flavor and buttery texture, grown using sustainable organic practices in Uzbekistan.</p>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Key Features:</h4>
+                                <ul class="space-y-1 text-sm text-gray-600">
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Versatile legume for multiple cuisines</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">Grown with natural soil enrichment</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <span class="ml-2">High in protein and complex carbohydrates</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-900 mb-2">Available Packaging:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">5 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">10 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">25 kg</span>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs">Bulk</span>
+                                </div>
+                            </div>
+                            
+                            <button class="!rounded-button w-full bg-primary text-white py-2 hover:bg-primary/90 transition-colors whitespace-nowrap">Request Quote</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 flex justify-between items-center">
+                    <div class="text-sm text-gray-700">
+                        Showing <span class="font-medium">1</span> to <span class="font-medium">9</span> of <span class="font-medium">12</span> results
+                    </div>
+                    <div class="flex space-x-2">
+                        <button class="!rounded-button px-4 py-2 bg-white border border-gray-300 text-gray-500 hover:bg-gray-50 whitespace-nowrap" disabled>Previous</button>
+                        <button class="!rounded-button px-4 py-2 bg-primary text-white hover:bg-primary/90 whitespace-nowrap">1</button>
+                        <button class="!rounded-button px-4 py-2 bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 whitespace-nowrap">2</button>
+                        <button class="!rounded-button px-4 py-2 bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 whitespace-nowrap">Next</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-16 bg-primary/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Cultivation Methods</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">At Terrabi, we take pride in our sustainable and traditional farming practices that ensure the highest quality organic products.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full text-primary mb-4">
+                            <i class="ri-plant-line text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Natural Fertilizers</h3>
+                        <p class="text-gray-600">We use only natural fertilizers such as compost, manure, and green manures to enrich our soil. This ensures that our products are free from synthetic chemicals while promoting soil health.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full text-primary mb-4">
+                            <i class="ri-recycle-line text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Crop Rotation</h3>
+                        <p class="text-gray-600">We implement systematic crop rotation to naturally maintain soil fertility, reduce pest pressure, and prevent soil-borne diseases, resulting in healthier plants and higher quality produce.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full text-primary mb-4">
+                            <i class="ri-water-flash-line text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Water Conservation</h3>
+                        <p class="text-gray-600">Our drip irrigation systems and water management practices ensure efficient water usage while maintaining optimal growing conditions for our crops, preserving this precious resource.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="certifications" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Certifications</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">All our products are certified by leading international organic certification bodies, ensuring they meet the highest standards of quality and safety.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="flex flex-col items-center">
+                        <div class="w-20 h-20 flex items-center justify-center text-4xl text-primary mb-4">
+                            <i class="ri-verified-badge-fill"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">USDA Organic</h3>
+                        <p class="text-gray-600 text-center text-sm">Certified organic by US Department of Agriculture</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-20 h-20 flex items-center justify-center text-4xl text-primary mb-4">
+                            <i class="ri-leaf-fill"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">EU Organic</h3>
+                        <p class="text-gray-600 text-center text-sm">European Union organic certification</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-20 h-20 flex items-center justify-center text-4xl text-primary mb-4">
+                            <i class="ri-shield-check-fill"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">ISO 22000</h3>
+                        <p class="text-gray-600 text-center text-sm">Food safety management systems</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-20 h-20 flex items-center justify-center text-4xl text-primary mb-4">
+                            <i class="ri-award-fill"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">HACCP</h3>
+                        <p class="text-gray-600 text-center text-sm">Hazard Analysis Critical Control Point</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-16 bg-primary/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Request a Custom Quote</h2>
+                        <p class="text-gray-600 mb-8">Interested in our products? Fill out the form and our team will get back to you with a customized quote based on your requirements.</p>
+                        
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Company Name</label>
+                                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                    <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                                    <input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Products of Interest</label>
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                        Rice
+                                    </label>
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                        Beans
+                                    </label>
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                        Lentils
+                                    </label>
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                        Chickpeas
+                                    </label>
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" placeholder="Please specify quantities, packaging preferences, and any other requirements..."></textarea>
+                            </div>
+                            <button type="submit" class="!rounded-button bg-primary text-white px-6 py-3 hover:bg-opacity-90 transition-colors whitespace-nowrap">Submit Request</button>
+                        </form>
+                    </div>
+                    <div class="hidden md:block">
+                        <img src="https://readdy.ai/api/search-image?query=A%2520professional%2520photograph%2520of%2520a%2520modern%2520agricultural%2520processing%2520facility%2520with%2520workers%2520in%2520white%2520uniforms%2520carefully%2520inspecting%2520and%2520packaging%2520organic%2520grains%2520and%2520legumes.%2520The%2520facility%2520is%2520clean%2520and%2520well-lit%2520with%2520stainless%2520steel%2520equipment.%2520Workers%2520are%2520using%2520digital%2520scales%2520and%2520quality%2520control%2520equipment.%2520The%2520image%2520conveys%2520professionalism%252C%2520cleanliness%252C%2520and%2520attention%2520to%2520quality.&width=600&height=800&seq=16&orientation=portrait" alt="Terrabi Quality Control" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div>
+                    <a href="https://readdy.ai/home/3753529c-337c-48b6-bdd0-ed34bd0cd66b/98caa673-e9c7-406e-be1c-1c1ce22f60af" data-readdy="true" class="text-2xl font-['Pacifico'] text-white mb-6 block">Terrabi</a>
+                    <p class="text-gray-400 mb-6">Premium organic agricultural products from Uzbekistan to the world.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 text-gray-400 hover:text-white hover:border-white transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 text-gray-400 hover:text-white hover:border-white transition-colors">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 text-gray-400 hover:text-white hover:border-white transition-colors">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-4">
+                        <li><a href="https://readdy.ai/home/3753529c-337c-48b6-bdd0-ed34bd0cd66b/98caa673-e9c7-406e-be1c-1c1ce22f60af#about" data-readdy="true" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="https://readdy.ai/home/3753529c-337c-48b6-bdd0-ed34bd0cd66b/98caa673-e9c7-406e-be1c-1c1ce22f60af#products" data-readdy="true" class="text-gray-400 hover:text-white transition-colors">Products</a></li>
+                        <li><a href="https://readdy.ai/home/3753529c-337c-48b6-bdd0-ed34bd0cd66b/98caa673-e9c7-406e-be1c-1c1ce22f60af#certifications" data-readdy="true" class="text-gray-400 hover:text-white transition-colors">Certifications</a></li>
+                        <li><a href="https://readdy.ai/home/3753529c-337c-48b6-bdd0-ed34bd0cd66b/98caa673-e9c7-406e-be1c-1c1ce22f60af#export" data-readdy="true" class="text-gray-400 hover:text-white transition-colors">Export Process</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Products</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Organic Rice</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Organic Beans</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Organic Lentils</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">View All</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to receive updates about our products and offers.</p>
+                    <form class="space-y-4">
+                        <input type="email" placeholder="Your email address" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary">
+                        <button type="submit" class="!rounded-button w-full bg-primary text-white px-6 py-2 hover:bg-opacity-90 transition-colors whitespace-nowrap">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400">&copy; 2025 Terrabi. All rights reserved.</p>
+                <div class="flex items-center mt-4 md:mt-0">
+                    <img src="https://readdy.ai/api/search-image?query=A%2520simple%252C%2520modern%252C%2520and%2520professional%2520design%2520of%2520the%2520Uzbekistan%2520national%2520emblem%2520or%2520quality%2520mark%2520in%2520a%2520minimalist%2520style.%2520The%2520design%2520should%2520be%2520clean%2520and%2520recognizable%2520as%2520an%2520official%2520product%2520certification%2520mark&width=100&height=100&seq=6&orientation=squarish" alt="Product of Uzbekistan" class="w-8 h-8 mr-2">
+                    <span class="text-gray-400">Product of Uzbekistan</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Quick View Modal -->
+    <div id="quick-view-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center p-6 border-b">
+                <h3 class="text-xl font-semibold">Product Details</h3>
+                <button id="close-modal" class="text-gray-500 hover:text-gray-700">
+                    <i class="ri-close-line text-2xl"></i>
+                </button>
+            </div>
+            <div class="p-6">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <img id="modal-product-image" src="" alt="Product" class="w-full h-auto rounded-lg">
+                        <div class="mt-4 grid grid-cols-4 gap-2">
+                            <img src="https://readdy.ai/api/search-image?query=Close-up%2520professional%2520product%2520photography%2520of%2520organic%2520rice%2520grains%2520with%2520soft%2520natural%2520lighting%2520on%2520clean%2520white%2520background&width=100&height=100&seq=17&orientation=squarish" alt="Product thumbnail" class="w-full h-auto rounded cursor-pointer border-2 border-primary">
+                            <img src="https://readdy.ai/api/search-image?query=Close-up%2520professional%2520product%2520photography%2520of%2520organic%2520rice%2520in%2520packaging%2520with%2520soft%2520natural%2520lighting%2520on%2520clean%2520white%2520background&width=100&height=100&seq=18&orientation=squarish" alt="Product thumbnail" class="w-full h-auto rounded cursor-pointer">
+                            <img src="https://readdy.ai/api/search-image?query=Close-up%2520professional%2520product%2520photography%2520of%2520cooked%2520organic%2520rice%2520with%2520soft%2520natural%2520lighting%2520on%2520clean%2520white%2520background&width=100&height=100&seq=19&orientation=squarish" alt="Product thumbnail" class="w-full h-auto rounded cursor-pointer">
+                            <img src="https://readdy.ai/api/search-image?query=Close-up%2520professional%2520product%2520photography%2520of%2520organic%2520rice%2520field%2520with%2520soft%2520natural%2520lighting&width=100&height=100&seq=20&orientation=squarish" alt="Product thumbnail" class="w-full h-auto rounded cursor-pointer">
+                        </div>
+                    </div>
+                    <div>
+                        <span id="modal-product-category" class="inline-block px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm mb-4">Rice</span>
+                        <h2 id="modal-product-title" class="text-2xl font-semibold mb-2">Organic Basmati Rice</h2>
+                        <div class="flex mb-4">
+                            <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                <i class="ri-award-line"></i>
+                            </div>
+                            <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                <i class="ri-verified-badge-line"></i>
+                            </div>
+                            <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                <i class="ri-leaf-line"></i>
+                            </div>
+                        </div>
+                        
+                        <p id="modal-product-description" class="text-gray-600 mb-6">Premium long-grain basmati rice grown in the fertile valleys of Uzbekistan using traditional organic farming methods. Our basmati rice is known for its exceptional aroma, flavor, and texture.</p>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-900 mb-2">Key Features:</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                    <span class="ml-2">Aromatic long-grain variety with exceptional flavor</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                    <span class="ml-2">100% pesticide-free cultivation</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                    <span class="ml-2">High in essential nutrients and minerals</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 text-primary">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                    <span class="ml-2">Aged for optimal flavor development</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-900 mb-2">Cultivation Method:</h4>
+                            <p class="text-gray-600">Our basmati rice is grown using traditional organic farming methods that have been practiced for generations. We use natural fertilizers and pest control methods to ensure the highest quality product while preserving the environment.</p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-900 mb-2">Nutritional Benefits:</h4>
+                            <p class="text-gray-600">Rich in carbohydrates, protein, and essential vitamins and minerals. Our organic basmati rice is free from harmful chemicals, making it a healthier choice for you and your family.</p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-900 mb-2">Available Packaging:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <button class="px-4 py-2 border-2 border-primary text-primary rounded-full text-sm font-medium">5 kg</button>
+                                <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-full text-sm">10 kg</button>
+                                <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-full text-sm">25 kg</button>
+                                <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-full text-sm">Bulk</button>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-900 mb-2">Certifications:</h4>
+                            <div class="flex space-x-4">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-12 h-12 flex items-center justify-center text-2xl text-primary">
+                                        <i class="ri-verified-badge-fill"></i>
+                                    </div>
+                                    <span class="text-xs text-gray-600">USDA Organic</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-12 h-12 flex items-center justify-center text-2xl text-primary">
+                                        <i class="ri-leaf-fill"></i>
+                                    </div>
+                                    <span class="text-xs text-gray-600">EU Organic</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-12 h-12 flex items-center justify-center text-2xl text-primary">
+                                        <i class="ri-shield-check-fill"></i>
+                                    </div>
+                                    <span class="text-xs text-gray-600">ISO 22000</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="!rounded-button w-full bg-primary text-white py-3 hover:bg-primary/90 transition-colors whitespace-nowrap">Request Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script id="language-selector">
+        document.addEventListener('DOMContentLoaded', function() {
+            const langInputs = document.querySelectorAll('input[name="lang"]');
+            langInputs.forEach(input => {
+                input.addEventListener('change', function() {
+                    const labels = document.querySelectorAll('label[for^="en"], label[for^="ru"]');
+                    labels.forEach(label => {
+                        label.classList.remove('bg-primary', 'text-white');
+                    });
+                    const selectedLabel = document.querySelector(`label[for="${this.id}"]`);
+                    if (selectedLabel) {
+                        selectedLabel.classList.add('bg-primary', 'text-white');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script id="category-filter">
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryButtons = document.querySelectorAll('#all-category, #rice-category, #beans-category, #legumes-category');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    categoryButtons.forEach(btn => {
+                        btn.classList.remove('bg-primary', 'text-white');
+                        btn.classList.add('bg-white', 'border', 'border-gray-300', 'text-gray-700');
+                    });
+                    
+                    // Add active class to clicked button
+                    this.classList.remove('bg-white', 'border', 'border-gray-300', 'text-gray-700');
+                    this.classList.add('bg-primary', 'text-white');
+                });
+            });
+        });
+    </script>
+
+    <script id="sort-dropdown">
+        document.addEventListener('DOMContentLoaded', function() {
+            const sortButton = document.getElementById('sort-button');
+            const sortDropdown = document.getElementById('sort-dropdown');
+            
+            sortButton.addEventListener('click', function() {
+                sortDropdown.classList.toggle('hidden');
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!sortButton.contains(event.target) && !sortDropdown.contains(event.target)) {
+                    sortDropdown.classList.add('hidden');
+                }
+            });
+            
+            // Handle sort option selection
+            const sortOptions = sortDropdown.querySelectorAll('button');
+            sortOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    sortDropdown.classList.add('hidden');
+                    // Here you would implement the actual sorting logic
+                });
+            });
+        });
+    </script>
+
+    <script id="view-toggle">
+        document.addEventListener('DOMContentLoaded', function() {
+            const gridViewBtn = document.getElementById('grid-view');
+            const listViewBtn = document.getElementById('list-view');
+            
+            gridViewBtn.addEventListener('click', function() {
+                gridViewBtn.classList.remove('bg-white', 'border', 'border-gray-300', 'text-gray-700');
+                gridViewBtn.classList.add('bg-primary', 'text-white');
+                
+                listViewBtn.classList.remove('bg-primary', 'text-white');
+                listViewBtn.classList.add('bg-white', 'border', 'border-gray-300', 'text-gray-700');
+                
+                // Here you would implement the actual view change logic
+            });
+            
+            listViewBtn.addEventListener('click', function() {
+                listViewBtn.classList.remove('bg-white', 'border', 'border-gray-300', 'text-gray-700');
+                listViewBtn.classList.add('bg-primary', 'text-white');
+                
+                gridViewBtn.classList.remove('bg-primary', 'text-white');
+                gridViewBtn.classList.add('bg-white', 'border', 'border-gray-300', 'text-gray-700');
+                
+                // Here you would implement the actual view change logic
+            });
+        });
+    </script>
+
+    <script id="quick-view-modal">
+        document.addEventListener('DOMContentLoaded', function() {
+            const quickViewBtns = document.querySelectorAll('.quick-view-btn');
+            const modal = document.getElementById('quick-view-modal');
+            const closeModalBtn = document.getElementById('close-modal');
+            
+            quickViewBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    modal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                    
+                    // Here you would populate the modal with the product details
+                    // For now, we're using static content
+                });
+            });
+            
+            closeModalBtn.addEventListener('click', function() {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            });
+            
+            // Close modal when clicking outside the content
+            modal.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    modal.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

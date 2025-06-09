@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Terrabi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2C5F2D',
+                        secondary: '#97BC62',
+                        accent: '#F2E8CF'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body { font-family: 'Open Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+        .lang-selector input:checked + label { background-color: #2C5F2D; color: white; }
+        .scroll-hidden::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-white">
+    <header id="terrabi-header"></header>
+
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section class="relative h-[400px] md:h-[500px] bg-accent/50 flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
+            <img src="https://readdy.ai/api/search-image?query=Soft%20light%20organic%20farm%20background%20with%20fields%20and%20hills%2C%20minimal%20and%20bright%2C%20clean%20composition%20for%20website%20hero&width=1920&height=600&seq=11&orientation=landscape" alt="" class="absolute inset-0 w-full h-full object-cover object-center opacity-40 pointer-events-none select-none" loading="lazy">
+            <div class="relative z-10 text-center">
+                <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4 drop-shadow-lg">About Terrabi</h1>
+                <p class="text-xl text-gray-700 max-w-2xl mx-auto">Organic Excellence from Uzbekistan to the World</p>
+            </div>
+        </section>
+
+        <!-- About Company Block -->
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="rounded-lg overflow-hidden shadow-lg bg-accent/20">
+                        <img src="https://readdy.ai/api/search-image?query=Modern%20organic%20agriculture%20company%20in%20Uzbekistan%20with%20happy%20workers%20and%20clean%20facility%2C%20natural%20light%2C%20high%20quality%20photo&width=800&height=600&seq=2&orientation=landscape" alt="Terrabi Company" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Story, Mission &amp; Values</h2>
+                        <div class="w-20 h-1 bg-primary mb-6"></div>
+                        <p class="text-gray-700 mb-4">
+                            Since 2015, Terrabi has been at the forefront of organic agriculture in Uzbekistan, combining traditional farming wisdom with modern sustainable practices. Our commitment to quality and environmental stewardship has made us a trusted partner for international buyers seeking premium organic products.
+                        </p>
+                        <p class="text-gray-700 mb-6">
+                            <span class="font-semibold text-primary">Mission:</span>
+                            To deliver the finest organic rice, beans, and legumes from Uzbekistan to the world, ensuring sustainability, quality, and trust at every step.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full mt-1">
+                                    <i class="ri-seedling-line text-primary text-xl"></i>
+                                </div>
+                                <span class="ml-3"><span class="font-semibold">Sustainable Farming:</span> We use eco-friendly methods to protect the land for future generations.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full mt-1">
+                                    <i class="ri-shield-check-line text-primary text-xl"></i>
+                                </div>
+                                <span class="ml-3"><span class="font-semibold">Certifications:</span> Certified by international standards for organic quality and food safety.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full mt-1">
+                                    <i class="ri-earth-line text-primary text-xl"></i>
+                                </div>
+                                <span class="ml-3"><span class="font-semibold">Global Exports:</span> Supplying premium products to clients across the globe.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full mt-1">
+                                    <i class="ri-hand-heart-line text-primary text-xl"></i>
+                                </div>
+                                <span class="ml-3"><span class="font-semibold">Client Trust:</span> Building long-term relationships through transparency and excellence.</span>
+                            </li>
+                        </ul>
+                        <a href="#team" class="inline-block !rounded-button bg-primary text-white px-6 py-3 hover:bg-opacity-90 transition-colors whitespace-nowrap">Meet Our Team (Coming Soon)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Anchor for future sections -->
+        <section id="team"></section>
+        <!-- More sections like Team, History, etc. can be added here -->
+    </main>
+
+    <footer id="terrabi-footer"></footer>
+
+    <script>
+    // Fetch header and footer from the main page and inject
+    fetch('Terrabi-Organic-Products.html')
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const header = doc.querySelector('header');
+        const footer = doc.querySelector('footer');
+        if (header) document.getElementById('terrabi-header').innerHTML = header.outerHTML;
+        if (footer) document.getElementById('terrabi-footer').innerHTML = footer.outerHTML;
+      });
+    </script>
+</body>
+</html>

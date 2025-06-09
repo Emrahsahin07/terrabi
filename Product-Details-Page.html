@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organic Basmati Rice - Terrabi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&family=Pacifico&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#2C5F2D',
+secondary: '#97BC62',
+accent: '#F2E8CF'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body { font-family: 'Open Sans', sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+.gallery-thumbnail.active { border-color: #2C5F2D; }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+.tab-button.active { color: #2C5F2D; border-bottom-color: #2C5F2D; }
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.custom-number-input button {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  height: 100%;
+  width: 3rem;
+  cursor: pointer;
+}
+.custom-number-input button:hover {
+  background-color: #f3f4f6;
+}
+.custom-number-input input {
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+  width: 4rem;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex items-center">
+        <a href="https://readdy.ai/home/3753529c-337c-48b6-bdd0-ed34bd0cd66b/98caa673-e9c7-406e-be1c-1c1ce22f60af" data-readdy="true" class="flex items-center text-gray-700 hover:text-primary mr-6">
+          <i class="ri-arrow-left-line mr-2"></i>
+          <span>Back to Products</span>
+        </a>
+        <span class="text-sm text-gray-500">Rice / Organic Products</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100">
+          <i class="ri-share-line text-gray-700"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+    <!-- Product Gallery Section -->
+    <div>
+      <div class="relative rounded-lg overflow-hidden bg-white mb-4 h-[400px]">
+        <img id="main-image" src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%2520premium%2520organic%2520basmati%2520rice%2520grains%2520in%2520a%2520beautiful%2520arrangement%2520on%2520a%2520clean%2520white%2520surface%2520with%2520soft%2520natural%2520lighting.%2520The%2520rice%2520appears%2520pristine%2520and%2520high-quality%2520with%2520a%2520subtle%2520warm%2520tone.%2520Close-up%2520details%2520show%2520the%2520long%2520slender%2520grains%2520with%2520perfect%2520texture.%2520Minimal%2520styling%2520with%2520focus%2520on%2520the%2520natural%2520beauty%2520of%2520the%2520premium%2520basmati%2520rice&width=800&height=800&seq=1&orientation=squarish" alt="Organic Basmati Rice" class="w-full h-full object-cover">
+        <button id="zoom-button" class="absolute bottom-4 right-4 bg-white/80 backdrop-blur-sm rounded-full w-10 h-10 flex items-center justify-center shadow-sm">
+          <i class="ri-zoom-in-line text-gray-700"></i>
+        </button>
+      </div>
+      <div class="flex space-x-2 overflow-x-auto pb-2">
+        <div class="gallery-thumbnail active cursor-pointer p-1 border-2 border-primary rounded">
+          <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%2520premium%2520organic%2520basmati%2520rice%2520grains%2520in%2520a%2520beautiful%2520arrangement%2520on%2520a%2520clean%2520white%2520surface%2520with%2520soft%2520natural%2520lighting.%2520The%2520rice%2520appears%2520pristine%2520and%2520high-quality%2520with%2520a%2520subtle%2520warm%2520tone.%2520Close-up%2520details%2520show%2520the%2520long%2520slender%2520grains%2520with%2520perfect%2520texture.%2520Minimal%2520styling%2520with%2520focus%2520on%2520the%2520natural%2520beauty%2520of%2520the%2520premium%2520basmati%2520rice&width=800&height=800&seq=1&orientation=squarish" alt="Basmati Rice" class="w-20 h-20 object-cover rounded">
+        </div>
+        <div class="gallery-thumbnail cursor-pointer p-1 border-2 border-transparent rounded">
+          <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%2520organic%2520basmati%2520rice%2520in%2520a%2520premium%2520packaging%2520bag%2520with%2520clean%2520modern%2520design%2520on%2520white%2520background.%2520The%2520packaging%2520shows%2520high-quality%2520materials%2520with%2520clear%2520labeling%2520and%2520organic%2520certification%2520marks.%2520The%2520image%2520highlights%2520the%2520product%2520presentation%2520as%2520it%2520would%2520appear%2520on%2520store%2520shelves&width=800&height=800&seq=2&orientation=squarish" alt="Packaged Rice" class="w-20 h-20 object-cover rounded">
+        </div>
+        <div class="gallery-thumbnail cursor-pointer p-1 border-2 border-transparent rounded">
+          <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%2520cooked%2520organic%2520basmati%2520rice%2520in%2520a%2520white%2520bowl%2520with%2520perfect%2520fluffy%2520texture.%2520Each%2520grain%2520is%2520separate%2520and%2520visible%2520showing%2520the%2520quality%2520of%2520the%2520rice.%2520Soft%2520natural%2520lighting%2520highlights%2520the%2520white%2520color%2520and%2520delicate%2520texture%2520of%2520the%2520perfectly%2520cooked%2520basmati%2520rice&width=800&height=800&seq=3&orientation=squarish" alt="Cooked Rice" class="w-20 h-20 object-cover rounded">
+        </div>
+        <div class="gallery-thumbnail cursor-pointer p-1 border-2 border-transparent rounded">
+          <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520showing%2520organic%2520basmati%2520rice%2520cultivation%2520in%2520beautiful%2520terraced%2520rice%2520fields%2520with%2520workers%2520harvesting.%2520The%2520image%2520captures%2520the%2520natural%2520growing%2520environment%2520with%2520lush%2520green%2520rice%2520plants%2520in%2520rows%2520and%2520mountains%2520in%2520the%2520background.%2520Natural%2520sunlight%2520creates%2520a%2520golden%2520glow%2520over%2520the%2520agricultural%2520landscape&width=800&height=800&seq=4&orientation=squarish" alt="Rice Fields" class="w-20 h-20 object-cover rounded">
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Information Section -->
+    <div>
+      <div class="mb-6">
+        <div class="flex items-center mb-2">
+          <span class="inline-block px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm mr-3">Rice</span>
+          <div class="flex space-x-1">
+            <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-full">
+              <i class="ri-leaf-fill text-green-600 text-sm"></i>
+            </div>
+            <div class="w-6 h-6 flex items-center justify-center bg-blue-100 rounded-full">
+              <i class="ri-verified-badge-fill text-blue-600 text-sm"></i>
+            </div>
+          </div>
+        </div>
+        <h1 class="text-3xl font-bold text-gray-900 mb-2">Organic Basmati Rice</h1>
+        <div class="flex items-center mb-4">
+          <div class="flex items-center text-yellow-400 mr-2">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-half-fill"></i>
+          </div>
+          <span class="text-gray-600 text-sm">(24 reviews)</span>
+        </div>
+        <p class="text-gray-700 mb-6">Premium long-grain basmati rice grown in the fertile valleys of Uzbekistan. Our rice is cultivated using traditional organic methods, ensuring exceptional aroma, taste, and nutritional value.</p>
+        
+        <div class="border-t border-b border-gray-200 py-4 mb-6">
+          <div class="flex justify-between items-center mb-4">
+            <div>
+              <span class="text-gray-600 text-sm">Price</span>
+              <div class="flex items-end">
+                <span class="text-2xl font-bold text-gray-900">$1,200 - $1,500</span>
+                <span class="text-gray-600 ml-2">/ MT</span>
+              </div>
+            </div>
+            <div>
+              <span class="text-gray-600 text-sm">MOQ</span>
+              <div class="text-gray-900 font-medium">5 MT</div>
+            </div>
+          </div>
+          
+          <div class="flex items-center mb-4">
+            <span class="text-gray-600 mr-4">Quantity (MT):</span>
+            <div class="custom-number-input flex">
+              <button id="decrement" class="rounded-l-md">-</button>
+              <input type="number" id="quantity" min="5" value="5" class="border-none">
+              <button id="increment" class="rounded-r-md">+</button>
+            </div>
+          </div>
+          
+          <div class="flex items-center text-gray-600 mb-2">
+            <i class="ri-truck-line mr-2"></i>
+            <span>Shipping from Tashkent, Uzbekistan</span>
+          </div>
+          <div class="flex items-center text-gray-600">
+            <i class="ri-time-line mr-2"></i>
+            <span>Lead time: 2-3 weeks after order confirmation</span>
+          </div>
+        </div>
+        
+        <div class="flex flex-col space-y-4">
+          <button class="!rounded-button bg-primary text-white px-6 py-3 text-lg hover:bg-opacity-90 transition-colors whitespace-nowrap flex items-center justify-center">
+            <i class="ri-message-3-line mr-2"></i>
+            Request Quote
+          </button>
+          <div class="flex space-x-4">
+            <button class="!rounded-button flex-1 border border-primary text-primary px-4 py-3 hover:bg-primary hover:text-white transition-colors whitespace-nowrap flex items-center justify-center">
+              <i class="ri-download-line mr-2"></i>
+              Download Specs
+            </button>
+            <button class="!rounded-button flex-1 border border-gray-300 text-gray-700 px-4 py-3 hover:bg-gray-100 transition-colors whitespace-nowrap flex items-center justify-center">
+              <i class="ri-heart-line mr-2"></i>
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Product Details Tabs -->
+  <div class="mt-12 bg-white rounded-lg shadow-sm overflow-hidden">
+    <div class="border-b border-gray-200">
+      <div class="flex overflow-x-auto">
+        <button class="tab-button active px-6 py-4 text-gray-700 font-medium border-b-2 border-transparent whitespace-nowrap">Description</button>
+        <button class="tab-button px-6 py-4 text-gray-700 font-medium border-b-2 border-transparent whitespace-nowrap">Specifications</button>
+        <button class="tab-button px-6 py-4 text-gray-700 font-medium border-b-2 border-transparent whitespace-nowrap">Packaging</button>
+        <button class="tab-button px-6 py-4 text-gray-700 font-medium border-b-2 border-transparent whitespace-nowrap">Certifications</button>
+        <button class="tab-button px-6 py-4 text-gray-700 font-medium border-b-2 border-transparent whitespace-nowrap">Downloads</button>
+      </div>
+    </div>
+    
+    <div class="p-6">
+      <!-- Description Tab -->
+      <div id="description-tab" class="tab-content active">
+        <h3 class="text-xl font-semibold mb-4">Product Description</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <p class="text-gray-700 mb-4">Our Organic Basmati Rice is cultivated in the pristine valleys of Uzbekistan, where the perfect combination of climate, soil, and traditional farming practices creates rice of exceptional quality. Each grain is carefully grown, harvested, and processed to preserve its natural aroma, flavor, and nutritional properties.</p>
+            
+            <p class="text-gray-700 mb-4">Basmati rice is renowned for its distinctive fragrance, delicate flavor, and long, slender grains that cook up fluffy with each grain separate. Our organic basmati rice offers these classic characteristics while also providing the benefits of organic cultivation – no synthetic pesticides, herbicides, or fertilizers are used in its production.</p>
+            
+            <h4 class="font-semibold text-gray-900 mb-2">Key Features:</h4>
+            <ul class="list-disc pl-5 text-gray-700 space-y-2 mb-4">
+              <li>100% certified organic</li>
+              <li>Extra-long grain variety (7.5mm+)</li>
+              <li>Distinctive natural aroma</li>
+              <li>Low glycemic index</li>
+              <li>Aged for optimal flavor development</li>
+              <li>Free from artificial additives and preservatives</li>
+              <li>Sustainably grown using traditional methods</li>
+            </ul>
+          </div>
+          
+          <div>
+            <img src="https://readdy.ai/api/search-image?query=Beautiful%2520landscape%2520photograph%2520of%2520terraced%2520rice%2520fields%2520in%2520Uzbekistan%2520with%2520mountains%2520in%2520the%2520background.%2520The%2520image%2520shows%2520lush%2520green%2520rice%2520paddies%2520in%2520perfect%2520rows%2520with%2520farmers%2520working%2520in%2520traditional%2520clothing.%2520Golden%2520sunlight%2520creates%2520a%2520warm%2520glow%2520over%2520the%2520agricultural%2520landscape.%2520The%2520scene%2520captures%2520the%2520natural%2520beauty%2520of%2520organic%2520rice%2520cultivation&width=600&height=400&seq=5&orientation=landscape" alt="Rice Fields in Uzbekistan" class="w-full h-auto rounded-lg mb-4">
+            
+            <h4 class="font-semibold text-gray-900 mb-2">Origin & Cultivation</h4>
+            <p class="text-gray-700 mb-4">Our basmati rice is grown in the fertile valleys of eastern Uzbekistan, where the unique combination of mineral-rich soil, pure mountain water, and traditional farming techniques creates the perfect conditions for premium rice cultivation. The fields are carefully managed by experienced farmers who have been growing rice for generations.</p>
+            
+            <h4 class="font-semibold text-gray-900 mb-2">Processing & Quality Control</h4>
+            <p class="text-gray-700">After harvesting, our rice undergoes a meticulous cleaning and aging process. Each batch is tested for purity, moisture content, and quality before packaging. Our state-of-the-art processing facility ensures that only the finest grains make it to your table.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Specifications Tab -->
+      <div id="specifications-tab" class="tab-content">
+        <h3 class="text-xl font-semibold mb-4">Product Specifications</h3>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <table class="w-full mb-6">
+              <tbody>
+                <tr class="border-b border-gray-200">
+                  <td class="py-3 text-gray-600">Product Type</td>
+                  <td class="py-3 font-medium text-gray-900">Organic Basmati Rice</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-3 text-gray-600">Origin</td>
+                  <td class="py-3 font-medium text-gray-900">Uzbekistan</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-3 text-gray-600">Grain Type</td>
+                  <td class="py-3 font-medium text-gray-900">Extra Long Grain</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-3 text-gray-600">Grain Length</td>
+                  <td class="py-3 font-medium text-gray-900">7.5mm+</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-3 text-gray-600">Color</td>
+                  <td class="py-3 font-medium text-gray-900">White/Cream</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-3 text-gray-600">Moisture Content</td>
+                  <td class="py-3 font-medium text-gray-900">≤ 14%</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-3 text-gray-600">Broken Grains</td>
+                  <td class="py-3 font-medium text-gray-900">≤ 1%</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-3 text-gray-600">Foreign Matter</td>
+                  <td class="py-3 font-medium text-gray-900">≤ 0.1%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <div>
+            <h4 class="font-semibold text-gray-900 mb-3">Nutritional Information (per 100g)</h4>
+            <table class="w-full mb-6">
+              <tbody>
+                <tr class="border-b border-gray-200">
+                  <td class="py-3 text-gray-600">Energy</td>
+                  <td class="py-3 font-medium text-gray-900">356 kcal</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-3 text-gray-600">Protein</td>
+                  <td class="py-3 font-medium text-gray-900">7.5g</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-3 text-gray-600">Carbohydrates</td>
+                  <td class="py-3 font-medium text-gray-900">78.2g</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-3 text-gray-600">Fat</td>
+                  <td class="py-3 font-medium text-gray-900">0.6g</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-3 text-gray-600">Fiber</td>
+                  <td class="py-3 font-medium text-gray-900">1.2g</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <h4 class="font-semibold text-gray-900 mb-3">Storage & Shelf Life</h4>
+            <ul class="list-disc pl-5 text-gray-700 space-y-2">
+              <li>Store in a cool, dry place away from direct sunlight</li>
+              <li>Keep in airtight container after opening</li>
+              <li>Shelf life: 24 months from production date under proper storage conditions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Packaging Tab -->
+      <div id="packaging-tab" class="tab-content">
+        <h3 class="text-xl font-semibold mb-4">Packaging Options</h3>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%252025kg%2520bulk%2520packaging%2520bag%2520for%2520organic%2520basmati%2520rice%2520with%2520clean%2520modern%2520design.%2520The%2520large%2520industrial%2520packaging%2520shows%2520high-quality%2520materials%2520with%2520clear%2520product%2520labeling%2520and%2520organic%2520certification%2520marks.%2520The%2520bag%2520appears%2520sturdy%2520and%2520suitable%2520for%2520commercial%2520distribution&width=600&height=400&seq=6&orientation=landscape" alt="25kg Bulk Bag" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h4 class="font-semibold text-gray-900 mb-2">25kg Bulk Bag</h4>
+              <ul class="text-gray-700 text-sm space-y-1">
+                <li>• Polypropylene woven bag with inner liner</li>
+                <li>• Moisture-resistant</li>
+                <li>• Heat-sealed for freshness</li>
+                <li>• Ideal for distributors and large-scale buyers</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%25205kg%2520retail%2520packaging%2520bag%2520for%2520organic%2520basmati%2520rice%2520with%2520premium%2520design.%2520The%2520medium-sized%2520packaging%2520shows%2520high-quality%2520materials%2520with%2520attractive%2520product%2520labeling%2520and%2520organic%2520certification%2520marks.%2520The%2520bag%2520appears%2520designed%2520for%2520retail%2520display%2520with%2520clear%2520product%2520visibility&width=600&height=400&seq=7&orientation=landscape" alt="5kg Retail Pack" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h4 class="font-semibold text-gray-900 mb-2">5kg Retail Pack</h4>
+              <ul class="text-gray-700 text-sm space-y-1">
+                <li>• High-quality laminated packaging</li>
+                <li>• Resealable zip-lock</li>
+                <li>• Transparent window for product visibility</li>
+                <li>• Perfect for retail distribution</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%25201kg%2520premium%2520retail%2520packaging%2520for%2520organic%2520basmati%2520rice%2520with%2520luxury%2520design.%2520The%2520small%2520consumer%2520packaging%2520shows%2520high-end%2520materials%2520with%2520elegant%2520product%2520labeling%2520and%2520organic%2520certification%2520marks.%2520The%2520package%2520appears%2520designed%2520for%2520upscale%2520retail%2520display%2520with%2520premium%2520presentation&width=600&height=400&seq=8&orientation=landscape" alt="1kg Premium Pack" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h4 class="font-semibold text-gray-900 mb-2">1kg Premium Pack</h4>
+              <ul class="text-gray-700 text-sm space-y-1">
+                <li>• Premium vacuum-sealed packaging</li>
+                <li>• Oxygen barrier for extended freshness</li>
+                <li>• Elegant design for high-end retail</li>
+                <li>• Available with custom branding</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-8 bg-gray-50 rounded-lg p-6">
+          <h4 class="font-semibold text-gray-900 mb-4">Custom Packaging Solutions</h4>
+          <p class="text-gray-700 mb-4">We offer custom packaging solutions to meet your specific requirements. Our team can work with you to develop packaging that aligns with your brand identity and market needs.</p>
+          
+          <div class="grid md:grid-cols-3 gap-4 mb-4">
+            <div class="flex items-center text-gray-700">
+              <i class="ri-check-line text-primary mr-2"></i>
+              <span>Private labeling available</span>
+            </div>
+            <div class="flex items-center text-gray-700">
+              <i class="ri-check-line text-primary mr-2"></i>
+              <span>Custom sizes (500g to 50kg)</span>
+            </div>
+            <div class="flex items-center text-gray-700">
+              <i class="ri-check-line text-primary mr-2"></i>
+              <span>Specialized packaging materials</span>
+            </div>
+          </div>
+          
+          <button class="!rounded-button border border-primary text-primary px-4 py-2 hover:bg-primary hover:text-white transition-colors whitespace-nowrap">
+            Inquire About Custom Packaging
+          </button>
+        </div>
+      </div>
+      
+      <!-- Certifications Tab -->
+      <div id="certifications-tab" class="tab-content">
+        <h3 class="text-xl font-semibold mb-4">Product Certifications</h3>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <div class="flex items-start mb-6">
+              <div class="w-16 h-16 flex items-center justify-center bg-green-100 rounded-lg mr-4">
+                <i class="ri-verified-badge-fill text-green-600 text-3xl"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">USDA Organic</h4>
+                <p class="text-gray-700 mb-2">Our basmati rice meets all USDA organic standards, ensuring it's grown without synthetic pesticides, fertilizers, or GMOs.</p>
+                <span class="text-primary text-sm">Certificate #: ORG-2023-UZ-7845</span>
+              </div>
+            </div>
+            
+            <div class="flex items-start mb-6">
+              <div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-lg mr-4">
+                <i class="ri-leaf-fill text-blue-600 text-3xl"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">EU Organic</h4>
+                <p class="text-gray-700 mb-2">Certified according to European Union organic regulations, confirming compliance with strict EU standards.</p>
+                <span class="text-primary text-sm">Certificate #: EU-BIO-154-22876</span>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-16 h-16 flex items-center justify-center bg-yellow-100 rounded-lg mr-4">
+                <i class="ri-award-fill text-yellow-600 text-3xl"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">Non-GMO Project Verified</h4>
+                <p class="text-gray-700 mb-2">Independently verified to be produced without genetic engineering or GMO ingredients.</p>
+                <span class="text-primary text-sm">Certificate #: NGP-2023-45621</span>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <div class="flex items-start mb-6">
+              <div class="w-16 h-16 flex items-center justify-center bg-red-100 rounded-lg mr-4">
+                <i class="ri-shield-check-fill text-red-600 text-3xl"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">HACCP Certified</h4>
+                <p class="text-gray-700 mb-2">Our processing facility maintains Hazard Analysis Critical Control Point certification, ensuring food safety throughout production.</p>
+                <span class="text-primary text-sm">Certificate #: HACCP-UZ-2023-1254</span>
+              </div>
+            </div>
+            
+            <div class="flex items-start mb-6">
+              <div class="w-16 h-16 flex items-center justify-center bg-purple-100 rounded-lg mr-4">
+                <i class="ri-global-fill text-purple-600 text-3xl"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">ISO 22000:2018</h4>
+                <p class="text-gray-700 mb-2">Our facility meets international standards for food safety management systems, ensuring consistent quality.</p>
+                <span class="text-primary text-sm">Certificate #: ISO22-UZ-78542</span>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-16 h-16 flex items-center justify-center bg-teal-100 rounded-lg mr-4">
+                <i class="ri-recycle-fill text-teal-600 text-3xl"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">Sustainable Agriculture Certified</h4>
+                <p class="text-gray-700 mb-2">Recognized for sustainable farming practices that conserve water, protect soil health, and support biodiversity.</p>
+                <span class="text-primary text-sm">Certificate #: SAC-2023-UZ-1287</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Downloads Tab -->
+      <div id="downloads-tab" class="tab-content">
+        <h3 class="text-xl font-semibold mb-4">Product Documents</h3>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="border border-gray-200 rounded-lg p-4 flex items-center">
+            <div class="w-12 h-12 flex items-center justify-center bg-red-100 rounded-lg mr-4">
+              <i class="ri-file-pdf-fill text-red-600 text-2xl"></i>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-medium text-gray-900">Product Specification Sheet</h4>
+              <p class="text-gray-600 text-sm">PDF, 1.2 MB</p>
+            </div>
+            <button class="!rounded-button border border-gray-300 text-gray-700 px-3 py-2 hover:bg-gray-100 transition-colors whitespace-nowrap">
+              <i class="ri-download-line"></i>
+            </button>
+          </div>
+          
+          <div class="border border-gray-200 rounded-lg p-4 flex items-center">
+            <div class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-lg mr-4">
+              <i class="ri-file-pdf-fill text-green-600 text-2xl"></i>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-medium text-gray-900">Organic Certification</h4>
+              <p class="text-gray-600 text-sm">PDF, 850 KB</p>
+            </div>
+            <button class="!rounded-button border border-gray-300 text-gray-700 px-3 py-2 hover:bg-gray-100 transition-colors whitespace-nowrap">
+              <i class="ri-download-line"></i>
+            </button>
+          </div>
+          
+          <div class="border border-gray-200 rounded-lg p-4 flex items-center">
+            <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-lg mr-4">
+              <i class="ri-file-pdf-fill text-blue-600 text-2xl"></i>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-medium text-gray-900">Quality Analysis Report</h4>
+              <p class="text-gray-600 text-sm">PDF, 1.5 MB</p>
+            </div>
+            <button class="!rounded-button border border-gray-300 text-gray-700 px-3 py-2 hover:bg-gray-100 transition-colors whitespace-nowrap">
+              <i class="ri-download-line"></i>
+            </button>
+          </div>
+          
+          <div class="border border-gray-200 rounded-lg p-4 flex items-center">
+            <div class="w-12 h-12 flex items-center justify-center bg-purple-100 rounded-lg mr-4">
+              <i class="ri-file-pdf-fill text-purple-600 text-2xl"></i>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-medium text-gray-900">Cooking Instructions & Recipes</h4>
+              <p class="text-gray-600 text-sm">PDF, 2.3 MB</p>
+            </div>
+            <button class="!rounded-button border border-gray-300 text-gray-700 px-3 py-2 hover:bg-gray-100 transition-colors whitespace-nowrap">
+              <i class="ri-download-line"></i>
+            </button>
+          </div>
+          
+          <div class="border border-gray-200 rounded-lg p-4 flex items-center">
+            <div class="w-12 h-12 flex items-center justify-center bg-yellow-100 rounded-lg mr-4">
+              <i class="ri-file-excel-fill text-yellow-600 text-2xl"></i>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-medium text-gray-900">Nutritional Data Sheet</h4>
+              <p class="text-gray-600 text-sm">Excel, 780 KB</p>
+            </div>
+            <button class="!rounded-button border border-gray-300 text-gray-700 px-3 py-2 hover:bg-gray-100 transition-colors whitespace-nowrap">
+              <i class="ri-download-line"></i>
+            </button>
+          </div>
+          
+          <div class="border border-gray-200 rounded-lg p-4 flex items-center">
+            <div class="w-12 h-12 flex items-center justify-center bg-teal-100 rounded-lg mr-4">
+              <i class="ri-file-pdf-fill text-teal-600 text-2xl"></i>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-medium text-gray-900">Sustainability Report</h4>
+              <p class="text-gray-600 text-sm">PDF, 3.1 MB</p>
+            </div>
+            <button class="!rounded-button border border-gray-300 text-gray-700 px-3 py-2 hover:bg-gray-100 transition-colors whitespace-nowrap">
+              <i class="ri-download-line"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Related Products Section -->
+  <section class="mt-16">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Related Products</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+        <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%2520organic%2520brown%2520basmati%2520rice%2520grains%2520scattered%2520on%2520a%2520clean%2520white%2520surface%2520with%2520soft%2520natural%2520lighting.%2520The%2520rice%2520appears%2520pristine%2520and%2520high-quality%2520with%2520its%2520natural%2520brown%2520color.%2520Minimal%2520styling%2520with%2520focus%2520on%2520the%2520natural%2520beauty%2520of%2520the%2520whole%2520grain%2520rice&width=600&height=400&seq=9&orientation=landscape" alt="Organic Brown Basmati Rice" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <span class="inline-block px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm mb-4">Rice</span>
+          <h3 class="text-xl font-semibold mb-2">Organic Brown Basmati Rice</h3>
+          <p class="text-gray-600 mb-4">Whole grain basmati rice with nutty flavor and additional nutritional benefits.</p>
+          <a href="https://readdy.ai/home/3753529c-337c-48b6-bdd0-ed34bd0cd66b/fdf1b17f-b226-4e02-86ae-85c0cec94bf2" data-readdy="true">
+            <button class="!rounded-button text-primary hover:bg-primary hover:text-white border border-primary px-4 py-2 transition-colors whitespace-nowrap">View Details</button>
+          </a>
+        </div>
+      </div>
+      
+      <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+        <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%2520organic%2520jasmine%2520rice%2520grains%2520scattered%2520on%2520a%2520clean%2520white%2520surface%2520with%2520soft%2520natural%2520lighting.%2520The%2520rice%2520appears%2520pristine%2520and%2520high-quality%2520with%2520its%2520characteristic%2520translucent%2520appearance.%2520Minimal%2520styling%2520with%2520focus%2520on%2520the%2520natural%2520beauty%2520of%2520the%2520aromatic%2520rice&width=600&height=400&seq=10&orientation=landscape" alt="Organic Jasmine Rice" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <span class="inline-block px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm mb-4">Rice</span>
+          <h3 class="text-xl font-semibold mb-2">Organic Jasmine Rice</h3>
+          <p class="text-gray-600 mb-4">Fragrant jasmine rice with a soft texture and delicate floral aroma.</p>
+          <a href="https://readdy.ai/home/3753529c-337c-48b6-bdd0-ed34bd0cd66b/fdf1b17f-b226-4e02-86ae-85c0cec94bf2" data-readdy="true">
+            <button class="!rounded-button text-primary hover:bg-primary hover:text-white border border-primary px-4 py-2 transition-colors whitespace-nowrap">View Details</button>
+          </a>
+        </div>
+      </div>
+      
+      <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+        <img src="https://readdy.ai/api/search-image?query=Professional%2520product%2520photography%2520of%2520organic%2520mung%2520beans%2520arranged%2520on%2520a%2520clean%2520white%2520surface%2520with%2520soft%2520natural%2520lighting.%2520The%2520beans%2520appear%2520fresh%2520and%2520high-quality%2520with%2520their%2520characteristic%2520green%2520color.%2520Minimal%2520styling%2520with%2520focus%2520on%2520the%2520natural%2520appearance%2520of%2520the%2520beans&width=600&height=400&seq=11&orientation=landscape" alt="Organic Mung Beans" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <span class="inline-block px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm mb-4">Beans</span>
+          <h3 class="text-xl font-semibold mb-2">Organic Mung Beans</h3>
+          <p class="text-gray-600 mb-4">Nutrient-rich mung beans cultivated using traditional organic methods.</p>
+          <a href="https://readdy.ai/home/3753529c-337c-48b6-bdd0-ed34bd0cd66b/fdf1b17f-b226-4e02-86ae-85c0cec94bf2" data-readdy="true">
+            <button class="!rounded-button text-primary hover:bg-primary hover:text-white border border-primary px-4 py-2 transition-colors whitespace-nowrap">View Details</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Fixed Bottom CTA Bar (Mobile Only) -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t border-gray-200 p-4 z-40">
+  <button class="!rounded-button w-full bg-primary text-white py-3 text-lg hover:bg-opacity-90 transition-colors whitespace-nowrap flex items-center justify-center">
+    <i class="ri-message-3-line mr-2"></i>
+    Request Quote
+  </button>
+</div>
+
+<!-- Image Zoom Modal -->
+<div id="zoom-modal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center">
+  <div class="relative w-full h-full flex items-center justify-center">
+    <img id="zoomed-image" src="" alt="Zoomed Product Image" class="max-w-full max-h-full object-contain">
+    <button id="close-zoom" class="absolute top-6 right-6 text-white text-3xl">
+      <i class="ri-close-line"></i>
+    </button>
+  </div>
+</div>
+
+<script id="gallery-interaction">
+document.addEventListener('DOMContentLoaded', function() {
+  const mainImage = document.getElementById('main-image');
+  const zoomedImage = document.getElementById('zoomed-image');
+  const zoomModal = document.getElementById('zoom-modal');
+  const zoomButton = document.getElementById('zoom-button');
+  const closeZoom = document.getElementById('close-zoom');
+  const thumbnails = document.querySelectorAll('.gallery-thumbnail');
+  
+  // Thumbnail click handler
+  thumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', function() {
+      // Update active state
+      thumbnails.forEach(t => t.classList.remove('active'));
+      this.classList.add('active');
+      
+      // Update main image
+      const imgSrc = this.querySelector('img').src;
+      mainImage.src = imgSrc;
+      zoomedImage.src = imgSrc;
+    });
+  });
+  
+  // Zoom functionality
+  zoomButton.addEventListener('click', function() {
+    zoomModal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  });
+  
+  closeZoom.addEventListener('click', function() {
+    zoomModal.classList.add('hidden');
+    document.body.style.overflow = '';
+  });
+});
+</script>
+
+<script id="tab-interaction">
+document.addEventListener('DOMContentLoaded', function() {
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabContents = document.querySelectorAll('.tab-content');
+  
+  tabButtons.forEach((button, index) => {
+    button.addEventListener('click', function() {
+      // Remove active class from all buttons and contents
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+      
+      // Add active class to clicked button and corresponding content
+      button.classList.add('active');
+      tabContents[index].classList.add('active');
+    });
+  });
+});
+</script>
+
+<script id="quantity-control">
+document.addEventListener('DOMContentLoaded', function() {
+  const quantityInput = document.getElementById('quantity');
+  const incrementBtn = document.getElementById('increment');
+  const decrementBtn = document.getElementById('decrement');
+  
+  incrementBtn.addEventListener('click', function() {
+    quantityInput.value = parseInt(quantityInput.value) + 1;
+  });
+  
+  decrementBtn.addEventListener('click', function() {
+    const currentValue = parseInt(quantityInput.value);
+    if (currentValue > 5) {
+      quantityInput.value = currentValue - 1;
+    }
+  });
+  
+  quantityInput.addEventListener('change', function() {
+    if (parseInt(this.value) < 5) {
+      this.value = 5;
+    }
+  });
+});
+</script>
+
+</body>
+</html>
