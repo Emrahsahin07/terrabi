@@ -1,0 +1,11 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
+
+# OAuth для GitHub
+[build.environment]
+  NODE_VERSION = "18"
