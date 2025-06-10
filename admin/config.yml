@@ -1,62 +1,25 @@
 backend:
-  name: github
-  repo: Emrahsahin07/terrabi
+  name: git-gateway
   branch: main
 
-media_folder: "assets/images/products"
-public_folder: "/assets/images/products"
+media_folder: "images/products"
+public_folder: "/images/products"
 
 media_library:
-  name: "default"
+  name: uploadcare
+  config: {}
 
 collections:
   - name: "products"
     label: "Products"
-    folder: "_data/products"
+    folder: "content/products"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Title (Turkish)", name: "title_tr", widget: "string", required: false}
-      - {label: "Category", name: "category", widget: "select", options: ["Nuts", "Beans", "Legumes", "Rice", "Grains", "Dried Fruits"]}
-      - {label: "Category (Turkish)", name: "category_tr", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Description (Turkish)", name: "description_tr", widget: "text", required: false}
+      - {label: "Product Name", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["Rice", "Beans", "Legumes"]}
       - {label: "Image", name: "image", widget: "image"}
-      - {label: "Price per kg (USD)", name: "price", widget: "number", value_type: "float", required: false}
-      - {label: "Minimum Order (kg)", name: "min_order", widget: "number", value_type: "int", required: false}
-      - {label: "Packaging Options", name: "packaging", widget: "list", field: {label: "Package", name: "package", widget: "string"}}
-      - {label: "Origin", name: "origin", widget: "string", default: "Uzbekistan"}
-      - {label: "Certifications", name: "certifications", widget: "list", field: {label: "Certification", name: "cert", widget: "string"}}
-      - {label: "Nutritional Info", name: "nutrition", widget: "object", fields: [
-          {label: "Protein (g per 100g)", name: "protein", widget: "number", value_type: "float", required: false},
-          {label: "Carbs (g per 100g)", name: "carbs", widget: "number", value_type: "float", required: false},
-          {label: "Fat (g per 100g)", name: "fat", widget: "number", value_type: "float", required: false},
-          {label: "Fiber (g per 100g)", name: "fiber", widget: "number", value_type: "float", required: false}
-        ]}
-      - {label: "Featured Product", name: "featured", widget: "boolean", default: false}
-      - {label: "Available", name: "available", widget: "boolean", default: true}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-
-  - name: "site_settings"
-    label: "Site Settings"
-    files:
-      - label: "Contact Information"
-        name: "contact"
-        file: "_data/contact.yml"
-        fields:
-          - {label: "Company Name", name: "company", widget: "string", default: "Terrabi"}
-          - {label: "Email", name: "email", widget: "string"}
-          - {label: "Phone", name: "phone", widget: "string"}
-          - {label: "Address", name: "address", widget: "text"}
-          - {label: "WhatsApp", name: "whatsapp", widget: "string", required: false}
-      - label: "Homepage Content"
-        name: "homepage"
-        file: "_data/homepage.yml"
-        fields:
-          - {label: "Hero Title", name: "hero_title", widget: "string"}
-          - {label: "Hero Title (Turkish)", name: "hero_title_tr", widget: "string", required: false}
-          - {label: "Hero Description", name: "hero_description", widget: "text"}
-          - {label: "Hero Description (Turkish)", name: "hero_description_tr", widget: "text", required: false}
-          - {label: "About Section Title", name: "about_title", widget: "string"}
-          - {label: "About Section Content", name: "about_content", widget: "text"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Features", name: "features", widget: "list"}
+      - {label: "Packaging", name: "packaging", widget: "list"}
+      - {label: "Order Link", name: "order_link", widget: "string", required: false}
