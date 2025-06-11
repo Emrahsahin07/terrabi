@@ -5,21 +5,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Products | Terrabi</title>
-  <style>
-    body { font-family: sans-serif; padding: 2rem; background: #f9f9f9; }
-    h1 { text-align: center; }
-    .product-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
-    .product-card {
-      background: #fff; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&family=Pacifico&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2C5F2D',
+            secondary: '#97BC62',
+            accent: '#F2E8CF'
+          },
+          borderRadius: {
+            'none': '0px',
+            'sm': '4px',
+            DEFAULT: '8px',
+            'md': '12px',
+            'lg': '16px',
+            'xl': '20px',
+            '2xl': '24px',
+            '3xl': '32px',
+            'full': '9999px',
+            'button': '8px'
+          }
+        }
+      }
     }
-    .product-card img { width: 100%; height: auto; border-radius: 4px; }
-    .product-card h2 { margin: 0.5rem 0 0.25rem; font-size: 1.2rem; }
-    .product-card p { margin: 0; font-size: 0.95rem; color: #555; }
+  </script>
+  <style>
+    :where([class^="ri-"])::before { content: "\f3c2"; }
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+    .product-card:hover .quick-view-btn {
+      opacity: 1;
+    }
   </style>
 </head>
-<body>
-  <h1>Our Products</h1>
-  <div class="product-list" id="product-list"></div>
+<body class="bg-gray-50">
+  <main class="pt-16">
+    <section class="bg-primary/5 py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+          <div>
+            <h1 class="text-3xl font-bold text-gray-900">Our Products</h1>
+            <p class="text-gray-600 mt-2">Discover our premium organic products from Uzbekistan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="product-list">
+          <!-- Product cards will be injected here -->
+        </div>
+      </div>
+    </section>
+  </main>
 
   <script>
     async function loadProducts() {
@@ -38,13 +83,21 @@
           const data = await res.json();
 
           const card = document.createElement('div');
-          card.className = 'product-card';
+          card.className = 'bg-white rounded-lg shadow-sm overflow-hidden product-card group';
           card.innerHTML = `
-            <img src="${data.image}" alt="${data.title}">
-            <h2>${data.title}</h2>
-            <p>${data.description}</p>
-            <p><strong>Price:</strong> $${data.price.toFixed(2)} / kg</p>
-            <p><strong>Origin:</strong> ${data.origin}</p>
+            <div class="relative">
+              <img src="${data.image}" alt="${data.title}" class="w-full h-64 object-cover">
+              <span class="absolute top-4 left-4 bg-secondary/90 text-white text-sm font-medium px-3 py-1 rounded-full">${data.category}</span>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-semibold text-gray-900">${data.title}</h3>
+              </div>
+              <p class="text-gray-600 mb-4">${data.description}</p>
+              <p class="text-sm text-gray-800"><strong>Origin:</strong> ${data.origin}</p>
+              <p class="text-sm text-gray-800"><strong>Min Order:</strong> ${data.min_order} kg</p>
+              <p class="text-sm text-gray-800"><strong>Price:</strong> $${data.price.toFixed(2)} / kg</p>
+            </div>
           `;
 
           container.appendChild(card);
