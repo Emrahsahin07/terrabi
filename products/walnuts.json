@@ -1,0 +1,24 @@
+{
+  "title": "Organic Walnuts",
+  "title_tr": "Organik Ceviz",
+  "category": "Nuts",
+  "description": "Premium quality organic walnuts grown in the fertile valleys of Uzbekistan.",
+  "description_tr": "Özbekistan'ın verimli vadilerinde yetişen birinci sınıf organik ceviz.",
+  "price": 4.5,
+  "min_order": 100,
+  "origin": "Uzbekistan",
+  "packaging": [
+    "10kg vacuum pack",
+    "25kg sack",
+    "bulk"
+  ],
+  "certifications": [
+    "Organic Certified",
+    "ISO 22000"
+  ],
+  "image": "/assets/images/products/1.jpg",
+  "gallery": [
+    "/assets/images/products/1.jpg",
+    "/assets/images/products/2.jpg"
+  ]
+}

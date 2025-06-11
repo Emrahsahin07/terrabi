@@ -1,0 +1,24 @@
+{
+  "title": "Sun-Dried Apricots",
+  "title_tr": "Gün Kurusu Kayısı",
+  "category": "Dried Fruits",
+  "description": "Naturally sun-dried apricots rich in flavor and nutrients, no additives.",
+  "description_tr": "Katkı maddesi içermeyen, besin değeri yüksek doğal gün kurusu kayısı.",
+  "price": 3.8,
+  "min_order": 200,
+  "origin": "Uzbekistan",
+  "packaging": [
+    "5kg box",
+    "12.5kg carton",
+    "bulk"
+  ],
+  "certifications": [
+    "Organic Certified",
+    "HACCP"
+  ],
+  "image": "/assets/images/products/3.jpg",
+  "gallery": [
+    "/assets/images/products/3.jpg",
+    "/assets/images/products/4.jpg"
+  ]
+}
