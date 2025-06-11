@@ -1,0 +1,18 @@
+{
+  "title": "Organic Red Kidney Beans",
+  "title_tr": "Organik Kırmızı Fasulye",
+  "category": "Beans",
+  "description": "Rich in protein and iron, ideal for export markets.",
+  "description_tr": "Protein ve demir açısından zengin, ihracat için ideal.",
+  "price": 1.15,
+  "min_order": 800,
+  "origin": "Uzbekistan",
+  "packaging": [
+    "20kg bag",
+    "bulk"
+  ],
+  "certifications": [
+    "Organic Certified"
+  ],
+  "image": "/images/products/kidney.jpg"
+}

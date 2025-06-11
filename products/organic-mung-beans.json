@@ -1,0 +1,19 @@
+{
+  "title": "Organic Mung Beans",
+  "title_tr": "Organik Mung Fasulyesi",
+  "category": "Legumes",
+  "description": "High-quality mung beans, ideal for export.",
+  "description_tr": "İhracata uygun, yüksek kaliteli mung fasulyesi.",
+  "price": 1.25,
+  "min_order": 500,
+  "origin": "Uzbekistan",
+  "packaging": [
+    "25kg bag",
+    "1 ton bulk"
+  ],
+  "certifications": [
+    "ISO 22000",
+    "Organic Certified"
+  ],
+  "image": "/images/products/mung.jpg"
+}

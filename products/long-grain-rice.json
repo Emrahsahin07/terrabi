@@ -1,0 +1,18 @@
+{
+  "title": "Long Grain Rice",
+  "title_tr": "Uzun Taneli Pirinç",
+  "category": "Rice",
+  "description": "Premium long grain rice from the Fergana Valley.",
+  "description_tr": "Fergana Vadisi’nden birinci sınıf uzun taneli pirinç.",
+  "price": 0.95,
+  "min_order": 1000,
+  "origin": "Uzbekistan",
+  "packaging": [
+    "10kg bag",
+    "25kg bag"
+  ],
+  "certifications": [
+    "ISO 22000"
+  ],
+  "image": "/images/products/rice.jpg"
+}
